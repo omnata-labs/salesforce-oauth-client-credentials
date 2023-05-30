@@ -38,7 +38,7 @@ Configure it as follows (use Legacy):
 
 ### Step 3: Auth Provider
 Create a new Auth. Provider, configure it as follows:
-Provider Type: OAuthClientCredentialsAuthProvider (if it's not in the list, you haven't deployed the Apex class correctly)
+- Provider Type: `OAuthClientCredentialsAuthProvider` (if it's not in the list, you haven't deployed the Apex class correctly)
 - Name: A name describing the Authorization Server (e.g. "Okta")
 - URL Suffix: Any valid suffix, feel free to use the same as the Name
 - URL Suffix (again): the same suffix as above, we use this inside the plugin code

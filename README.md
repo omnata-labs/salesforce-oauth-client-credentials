@@ -9,7 +9,7 @@
 
 Salesforce's out-of-the-box support for OAuth clients is limited to [Authorization Code Grant](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1). If you want to use [Client Credentials Grant](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4) (system to system, as opposed to redirecting a browser session), you're on your own and you need an Auth Provider Plugin.
 
-If you google this, there are several guides on building one as well as open source implementations. But they all store the Client ID and Client Secret in the Custom Metadata for the Auth Provider - That's a paddlin'.
+If you google this, there are several guides on building one as well as open source implementations. But they all store the Client ID and Client Secret as plain, readable text in the Custom Metadata for the Auth Provider - That's a paddlin'.
 
 This implementation uses a second set of Named Credentials to store the Client ID and Secret, which is best practise on the Salesforce Platform.
 
